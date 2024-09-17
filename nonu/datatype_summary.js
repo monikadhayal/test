@@ -17,7 +17,7 @@
  const id = Symbol('123')
  const anotherId = Symbol('123')
 
- console.log(id === anotherId)
+//  console.log(id === anotherId)
 
  const bigNumber = 1234567812345671234567n
 
@@ -35,6 +35,28 @@ const myfunction = function(){
     console.log("hello world!")
 }
 
-console.log( typeof bigNumber)
+// console.log( typeof bigNumber)
 
-console.log(typeof myfunction);
+// console.log(typeof myfunction);
+
+
+//***************************************************//
+
+//stake (primitive) ,heap (non-primitive)
+let myPgName = "monika"
+ let otherName ="akshay"
+
+ otherName ="dhayal"
+ console.log(myPgName)
+ console.log(otherName)
+
+ let userOne ={
+    email: "monika@gmail.com"
+    
+ }
+
+ let userTwo = userOne
+ userTwo.email = "akshay@gmail.com"
+//  Password: "monika"
+ console.log(userTwo.email)
+ console.log(userOne.email)
