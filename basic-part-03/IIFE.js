@@ -14,7 +14,7 @@
 //()()
 //ye upper vali dono same h aap dono tariko se kar sakte h 
 
-( () => {
+( () => { 
 
    console.log(`DB CONNECTED`);
 })();  
