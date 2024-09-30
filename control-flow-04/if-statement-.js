@@ -7,9 +7,9 @@
 const temperature = 41 
 if (temperature === 40){
 
- //console.log("lesss then 50")
+ console.log("lesss then 50")
 }else{
-   // console.log("greater then 50")
+    console.log("greater then 50")
 }
 
 //***var use mat karva varna golbel variable ban jata h power is liye let ya const ka use karo
@@ -42,14 +42,14 @@ const balance = 800
 //     }
 
 
- const username = true
+//  const username = true
 
- const LogIn = true
+//  const LogIn = true
 
- if(username || LogIn){
-    console.log("log IN ")
- }else{
-    console.log("log Out")
- }
+//  if(username || LogIn){
+//     console.log("log IN ")
+//  }else{
+//     console.log("log Out")
+//  }
 
  
