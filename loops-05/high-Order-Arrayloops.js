@@ -24,8 +24,8 @@ const monika = "hello world!"
 
  //console.log(map)
 
- for(const [key,value] of map){
-   // console.log(key, ":-", value);
+ for(const [key,value] in map){
+     console.log(key, ":-", value);
  }
 
  const myObject = {
@@ -36,7 +36,7 @@ const monika = "hello world!"
  for(const [key , value] of myObject){
    // console.log(key, ':-', value);
  }
- 
+
 
 
 
