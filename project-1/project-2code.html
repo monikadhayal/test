@@ -1,110 +1,54 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <button>Home</button>
-    <button>Youtube</button>
-    <h1> BMI Calculator </h1>
-    <form>
-    <label> Height in CM: </label>
-
-    <label> Weight in KG: </label>
-
-    </form>
-     <script src="javascript-2.js"></script>
-</body>
-</html> -->
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .body{
+            background-color:gray;
         }
+   .container {
+    display: flex;
+       align-items: center;  
+    justify-content: center;
+   }
+   .form-group{
+    display:table-cell
+   }
 
-        .bmi-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            width: 100%;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 18px;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        .result {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-        }
     </style>
 </head>
-<body>
+<body class = "body">
+    
+    <button>Home</button>
+    <button>Youtube</button>
+    
+    <div class="container">
+        <h1> BMI Calculator </h1>
+    <form>
+        <div class = "form-group">
 
-    <div class="bmi-container">
-        <h2>BMI Calculator</h2>
+            <label for ="height"> Height in CM: </label>
+            <input plaholder =" Enter your height">
+            
+        </div> 
 
-        <!-- Form for inputting weight and height -->
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" placeholder="Enter your weight" required>
+        <div class="from-group">
+            <label for="weight"> Weight in KG: </label>
+            <input placeholder="Enter your weight">
+        </div>
+    <button>Calculate</button>
+    <h3> BMI Weight Guide</h3>
+    <p> Under Weight = Less than 18.6</p>
+    <p> Normal Range = 18.6 and 24.9</p>
+    <p> Overweight = Greater than 24.9</p>
 
-        <label for="height">Height (cm):</label>
-        <input type="number" id="height" placeholder="Enter your height" required>
+    </form>
+    
+    <script src="javascript-2.js"></script>
+</div>
 
-        <button onclick="calculateBMI()">Calculate BMI</button>
-
-        <!-- Display the result here -->
-        <div class="result" id="bmiResult"></div>
-    </div>
-
-<script src="javascript-2.js"></script>
 </body>
-</html>
+</html> 
+     
